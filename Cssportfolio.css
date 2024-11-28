@@ -3,16 +3,17 @@
     padding: 0;
 
 }
-a { background-color: #004e60; /* Green */
+a { background-color: #2f016b; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
+    font-weight: bolder;
 }
 h1 {font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 190%;
@@ -24,7 +25,12 @@ body {
         background-image:url(Shelter.png);
         background-size: cover;
 }
-
+a { cursor: pointer;
+  transition: .01 ease;
+}
+a:hover {
+  opacity: 70%;
+}
 ul {
     list-style-type: none;
     margin: 0px;
@@ -70,9 +76,8 @@ ul {
         transition: .01 ease;
       }
     .column3:hover {
-        transform: scale(1.01);
+        opacity: 90%;
     }
-
 .row3:after { content: " "; display: table; clear:both;
         }
 .row {  margin: 8px, -16px; 
@@ -104,10 +109,10 @@ ul {
     padding: 15px;
     
   }
-.column { cursor: pointer;
+.column img { cursor: pointer;
     transition: .01 ease;
   }
-.column:hover {
+.column img:hover {
     opacity: 80%;
 
 
@@ -140,7 +145,7 @@ ul {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 1500px;
   }
   
   /* Caption of Modal Image */
