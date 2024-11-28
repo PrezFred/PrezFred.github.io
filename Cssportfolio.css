@@ -1,0 +1,227 @@
+*{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+a { background-color: #2f016b; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-weight: bolder;
+}
+h1 {font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 190%;
+    color: rgb(255, 255, 255);
+    
+}
+
+body {
+        background-image:url(Shelter.png);
+        background-size: cover;
+}
+a { cursor: pointer;
+  transition: .01 ease;
+}
+a:hover {
+  opacity: 70%;
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+.row2 { margin: 8px, -12px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #1e0707;
+    background-image: url(sky2.png);
+    background-size: cover;
+    width: 100%;
+}
+.row2, .row2 > .column2 {padding: 8px; 
+}
+
+.column2 {float: center;
+    width: 100%;
+    
+  }
+.row2:after { content: " "; display: table; clear:both;
+    }
+.row3 { margin: 8px, -12px;
+        text-align: center;
+        font-size: 50px;
+        font-style: italic;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #1e0707;
+        background-image: url(mountains.png);
+        background-size: cover;
+        width: 100%;
+    }
+.row3, .row3 > .column3 {padding: 8px; 
+    }
+    
+.column3 {float: left;
+        width: 50%;
+        padding: 20px;
+        
+      }
+      .column3 { cursor: pointer;
+        transition: .01 ease;
+      }
+    .column3:hover {
+        opacity: 90%;
+    }
+.row3:after { content: " "; display: table; clear:both;
+        }
+.row {  margin: 8px, -16px; 
+        text-align: center;
+        font-size: large;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #ffffff;
+        background-image:url(FFbackground.png);
+        background-size: cover;
+        }
+.row, .row > .gallery {padding: 8px; 
+}
+.row{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column {-ms-flex: 25%; /* IE10 */
+  flex: 25%;
+    width: 25%;
+    padding: 15px;
+    
+  }
+.column img { cursor: pointer;
+    transition: .01 ease;
+  }
+.column img:hover {
+    opacity: 80%;
+
+
+}
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1500px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+} .modal-content {
+      width: 100%;
+    }
+ 
+    .row:after { content: " "; display: table; clear:both;
+
+}
+
+@media screen and (max-width: 900px){.column {
+    width: 50%;
+}
+    
+}
+@media screen and (max-width: 600px){.column {
+    width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+} 
+}
+
