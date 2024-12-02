@@ -198,14 +198,7 @@ ul {
 
 }
 
-@media screen and (max-width: 900px){.column {
-    width: 50%;
-}
-    
-}
-@media screen and (max-width: 600px){.column {
-    width: 100%;
-}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -223,5 +216,5 @@ ul {
     max-width: 100%;
   }
 } 
-}
+
 
