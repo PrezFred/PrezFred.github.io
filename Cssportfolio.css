@@ -1,16 +1,18 @@
 *{ box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
+
+
+
 a { background-color: #2f016b; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 8px 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 25px;
+    font-size: 28px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     font-weight: bolder;
@@ -22,7 +24,7 @@ h1 {font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-        background-image:url(Shelter.png);
+        background-image:url(FFbackground.png);
         background-size: cover;
 }
 a { cursor: pointer;
@@ -218,3 +220,6 @@ ul {
 } 
 
 
+audio::-webkit-media-controls {
+  display: none;
+}
