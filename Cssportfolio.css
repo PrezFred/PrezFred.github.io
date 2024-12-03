@@ -220,6 +220,3 @@ ul {
 } 
 
 
-audio::-webkit-media-controls {
-  display: none;
-}
