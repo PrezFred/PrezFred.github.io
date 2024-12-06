@@ -5,18 +5,7 @@
 
 
 
-a { background-color: #2f016b; /* Green */
-    border: none;
-    color: white;
-    padding: 8px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 28px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
-    font-weight: bolder;
-}
+    
 h1 {font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 190%;
     color: rgb(255, 255, 255);
@@ -28,7 +17,7 @@ body {
         background-size: cover;
 }
 a { cursor: pointer;
-  transition: .01 ease;
+  transition: all 0.3 ease;
 }
 a:hover {
   opacity: 70%;
@@ -38,6 +27,63 @@ ul {
     margin: 0px;
     padding: 0px;
   }
+/* Top NaV*/
+  li, a, button {
+    color: #ffffff;
+    border: none;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+  }
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+.Logo {
+  cursor: pointer;
+  transition: .03 ease;
+  margin-right: auto;
+}
+.topnav {
+  list-style: none;
+
+}
+.topnav li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.topnav li a {
+  transition: all 0.3s ease 0s;
+}
+.topnav li a:hover {
+  color: #1972f8;
+}
+/*for a better stacking of the icons*/
+@media screen and (max-width: 800px) {
+  .li {
+    -ms-flex: 30%;
+    flex: 30%;
+    max-width: 30%;
+  }
+}
+
+button{
+  margin-left: 20px;
+  padding: 9px 29px;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0;
+}
+button:hover {
+  background-color: rgb(93, 38, 245);
+}
+
+/* ROWS and columns*/
 .row2 { margin: 8px, -12px;
     text-align: center;
     font-size: 25px;
@@ -47,7 +93,21 @@ ul {
     background-size: cover;
     width: 100%;
 }
-.row2, .row2 > .column2 {padding: 8px; 
+.row2, .row2 > .column2 {padding: 8px;
+  animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+         
 }
 
 .column2 {float: center;
@@ -67,7 +127,21 @@ ul {
         width: 100%;
     }
 .row3, .row3 > .column3 {padding: 8px; 
-    }
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+   
+}
     
 .column3 {float: left;
         width: 50%;
@@ -91,6 +165,20 @@ ul {
         background-size: cover;
         }
 .row, .row > .gallery {padding: 8px; 
+  animation: fadeInAnimation ease 1.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+
 }
 .row{
   display: -ms-flexbox; /* IE10 */
@@ -112,7 +200,7 @@ ul {
     
   }
 .column img { cursor: pointer;
-    transition: .01 ease;
+    transition: all 0.5 ease 0s;
   }
 .column img:hover {
     opacity: 80%;
