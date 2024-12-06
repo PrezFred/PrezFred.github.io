@@ -45,7 +45,8 @@ header{
   cursor: pointer;
   transition: .03 ease;
   margin-right: auto;
-  min-width: 100px;
+  display: flex;
+  min-width: 74px;
 }
 .topnav {
   list-style: none;
