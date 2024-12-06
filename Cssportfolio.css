@@ -37,7 +37,7 @@ ul {
   }
 header{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 10px 10%;
 }
