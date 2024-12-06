@@ -39,16 +39,17 @@ header{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px 10%;
+  padding: 10px 10%;
 }
 .Logo {
   cursor: pointer;
   transition: .03 ease;
   margin-right: auto;
+  min-width: 120px;
 }
 .topnav {
   list-style: none;
-
+  
 }
 .topnav li {
   display: inline-block;
@@ -57,16 +58,17 @@ header{
 
 .topnav li a {
   transition: all 0.3s ease 0s;
+  display: flex;
+  
 }
 .topnav li a:hover {
   color: #1972f8;
 }
 /*for a better stacking of the icons*/
-@media screen and (max-width: 800px) {
-  .li {
-    -ms-flex: 30%;
-    flex: 30%;
-    max-width: 30%;
+@media screen and (max-width: 650px) {
+  .topnav {
+    display: flex;
+  flex-direction: column;
   }
 }
 
