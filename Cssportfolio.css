@@ -45,7 +45,7 @@ header{
   cursor: pointer;
   transition: .03 ease;
   margin-right: auto;
-  min-width: 120px;
+  min-width: 100px;
 }
 .topnav {
   list-style: none;
@@ -65,7 +65,7 @@ header{
   color: #1972f8;
 }
 /*for a better stacking of the icons*/
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 740px) {
   .topnav {
     display: flex;
   flex-direction: column;
